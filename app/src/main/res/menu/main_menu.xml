@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item
+        android:id="@+id/home_group"
+        android:checkable="false"
+        android:title="@string/home">
+
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_apps_benchmark"
+                    android:icon="@drawable/ic_android"
+                    android:title="@string/start_benchmark" />
+
+                <item
+                    android:id="@+id/nav_synthetic_tests"
+                    android:icon="@drawable/ic_synthetic_tests"
+                    android:title="@string/synthetic_tests" />
+            </group>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/scores_group"
+        android:checkable="false"
+        android:title="@string/scores">
+
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_local_ranking"
+                    android:icon="@drawable/ic_local_ranking"
+                    android:title="@string/history" />
+                <item
+                    android:id="@+id/nav_global_ranking"
+                    android:icon="@drawable/ic_global_ranking"
+                    android:title="@string/top_scores" />
+            </group>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/profile_group"
+        android:checkable="false"
+        android:title="@string/user_profile">
+
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_account"
+                    android:icon="@drawable/ic_account"
+                    android:title="@string/your_account" />
+            </group>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/about_group"
+        android:checkable="false"
+        android:title="@string/about_us">
+
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_contact"
+                    android:icon="@drawable/ic_info"
+                    android:title="@string/contact_us" />
+            </group>
+        </menu>
+    </item>
+
+</menu>
